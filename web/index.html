@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LY Welcome System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app" class="app hidden">
+    <section class="panel">
+      <header class="panel__header">
+        <h1 id="title">Bienvenido a Lima York RP</h1>
+        <button id="closeBtn" class="close-btn" aria-label="Cerrar">✕</button>
+      </header>
+
+      <p id="description" class="description">Estamos felices de tenerte aquí.</p>
+
+      <div class="row">
+        <button id="streamerBtn" class="btn btn--secondary">SOY STREAMER</button>
+      </div>
+
+      <div class="row code-row">
+        <input id="codeInput" type="text" maxlength="30" placeholder="Código de bienvenida" />
+        <button id="redeemBtn" class="btn btn--primary">CANJEAR CÓDIGO</button>
+      </div>
+
+      <div class="selection">
+        <h2>Selecciona tu vehículo inicial</h2>
+        <div class="selection__actions">
+          <button class="btn btn--choice" data-vehicle="moto">MOTO</button>
+          <button class="btn btn--choice" data-vehicle="auto">AUTO</button>
+        </div>
+      </div>
+
+      <footer id="status" class="status">Esperando acción...</footer>
+    </section>
+  </main>
+
+  <audio id="confirmSound" preload="auto">
+    <source src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAABCxAgAEABAAZGF0YQAAAAA=" type="audio/wav">
+  </audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
