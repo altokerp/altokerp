@@ -1,0 +1,62 @@
+:root {
+  --go-green: #0f5132;
+  --go-black: #0b0b0b;
+  --go-white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  background: var(--go-white);
+  color: var(--go-black);
+}
+
+main {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero {
+  background: linear-gradient(120deg, var(--go-green), #1d7a52);
+  color: var(--go-white);
+  padding: 3rem 1.5rem;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+}
+
+.cta-group {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  background: var(--go-black);
+  color: var(--go-white);
+  font-weight: 600;
+}
+
+button.ghost {
+  background: transparent;
+  border: 1px solid var(--go-white);
+}
+
+.section {
+  padding: 1.5rem;
+}
+
+.section.alt {
+  background: #f5f7f8;
+}
